@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "title": "Transforming Visions into Reality",
+    "description": "We are a team of passionate digital creators. Our expert designers craft custom applications tailored to your needs, transforming your groundbreaking ideas into reality.",
+    "cta": "Contact Us"
+  },
+  "about": {
+    "title": "About Us",
+    "innovation": {
+      "title": "Our Passion for Innovation",
+      "description": "We are a team of passionate innovators dedicated to bringing digital solutions to life. Our expert developers provide an honest and creative approach to every project we undertake."
+    },
+    "commitment": {
+      "title": "Commitment to Excellence",
+      "description": "Quality is at the core of our values. We are bound by creativity and a relentless pursuit of customer satisfaction. Our unwavering commitment to excellence ensures that each project meets the expectations of our digital clients."
+    },
+    "tailored": {
+      "title": "Tailored Experiences for Success",
+      "description": "We take a custom approach to help you in creating tailored digital experiences that resonate with your audience. Join us on this exhilarating journey as we collaboratively transform your vision into a digital reality. Together, we'll create a distinctive presence in the digital landscape."
+    }
+  },
+  "services": {
+    "title": "Services We Offer",
+    "learnMore": "Learn more",
+    "app": {
+      "title": "App Development",
+      "description": "We create sleek and user-friendly Android & iOS mobile applications, equipped with the latest technologies and responsive design."
+    },
+    "web": {
+      "title": "Web Development",
+      "description": "We craft responsive and intuitive websites that captivate users, providing seamless online experiences across all devices."
+    },
+    "devops": {
+      "title": "DevOps",
+      "description": "Boost your software lifecycle with our efficient DevOps solutions, ensuring seamless deployments and rapid improvements."
+    }
+  },
+  "industries": {
+    "title": "Serving Across All Sectors",
+    "description": "Our expertise spans across various industry domains. From startups to established enterprises, we have the skills and experience to build the perfect application for your specific industry.",
+    "ecommerce": "E-commerce",
+    "education": "Education",
+    "healthcare": "Healthcare",
+    "realestate": "Real Estate",
+    "food": "Food & Restaurant",
+    "ondemand": "On-Demand"
+  },
+  "process": {
+    "title": "Process We Follow",
+    "requirements": {
+      "title": "Requirement Gathering",
+      "description": "We kick off by thoroughly understanding your project needs, ensuring a solid foundation for success."
+    },
+    "design": {
+      "title": "UI/UX Design",
+      "description": "Our designers craft attractive interfaces, ensuring an exceptional user experience."
+    },
+    "prototype": {
+      "title": "Prototype",
+      "description": "We build interactive prototypes, providing early visualization and feedback."
+    },
+    "development": {
+      "title": "Development",
+      "description": "Turning designs into functional applications using cutting-edge technologies."
+    },
+    "qa": {
+      "title": "Quality Assurance",
+      "description": "Rigorous testing ensures a bug-free, high-performance application."
+    },
+    "deployment": {
+      "title": "Deployment",
+      "description": "Carefully deploying the product to production, ensuring a smooth transition."
+    },
+    "support": {
+      "title": "Support & Maintenance",
+      "description": "Providing ongoing support, ensuring your application remains updated and optimized."
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "description": "Here, you can find a few examples of how we successfully helped other companies beat their challenges and pain points.",
+    "project1": {
+      "title": "E-Commerce Platform",
+      "description": "A comprehensive online shopping platform with advanced features like real-time inventory management and secure payment processing."
+    },
+    "project2": {
+      "title": "AI-Powered Analytics",
+      "description": "An intelligent analytics dashboard that leverages machine learning to provide actionable insights from complex data sets."
+    },
+    "project3": {
+      "title": "Healthcare Mobile App",
+      "description": "A patient-centric mobile application that streamlines appointment scheduling, medication reminders, and secure doctor-patient communication."
+    }
+  },
+  "technologies": {
+    "title": "Technologies"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Have a project in mind? Let's discuss how we can help bring your vision to life.",
+    "formTitle": "Let's Talk",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "copyright": "All Rights Reserved"
+  }
+}

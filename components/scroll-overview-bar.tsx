@@ -54,7 +54,7 @@ export default function ScrollOverviewBar({ sections }: ScrollOverviewBarProps) 
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -40, opacity: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className={`fixed top-0 left-0 right-0 z-50 h-1 ${isDark ? "bg-gray-800" : "bg-white"} shadow-md`}
+          className="fixed top-0 left-0 right-0 z-50 h-1 w-full max-w-[100vw] overflow-hidden bg-gray-800 dark:bg-gray-800 shadow-md"
         >
           {/* Progress bar */}
           <div
@@ -65,30 +65,27 @@ export default function ScrollOverviewBar({ sections }: ScrollOverviewBarProps) 
           />
 
           {/* Overview bar */}
-          <div
-            className={`flex items-center justify-between px-4 py-2 ${
-              isDark ? "bg-gray-900/90" : "bg-white/90"
-            } backdrop-blur-md border-b ${isDark ? "border-gray-800" : "border-gray-200"}`}
-          >
+          <div className="flex items-center justify-between px-2 sm:px-4 py-2 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
             <div className="text-sm font-medium">
-              <span className={isDark ? "text-white" : "text-gray-900"}>PRO</span>
+              <span className="text-gray-900 dark:text-white">PRO</span>
               <span className="text-purple-500">TECHIEN</span>
             </div>
 
-            <div className="flex space-x-4 overflow-x-auto hide-scrollbar">
-              {sections.map((section) => (
-                <Link
-                  key={section.id}
-                  href={`#${section.id}`}
-                  className={`text-xs whitespace-nowrap px-2 py-1 rounded transition-colors ${
-                    activeSection === section.id
-                      ? "text-white bg-purple-600"
-                      : `${isDark ? "text-gray-300" : "text-gray-700"} hover:text-purple-600`
-                  }`}
-                >
-                  {section.name}
-                </Link>
-              ))}
+            <div className="flex overflow-x-auto hide-scrollbar max-w-[70vw] sm:max-w-none">
+              <div className="flex space-x-2 sm:space-x-4">
+                {sections.map((section) => (
+                  <Link
+                    key={section.id}
+                    href={`#${section.id}`}
+                    className={`text-xs whitespace-nowrap px-2 py-1 rounded transition-colors ${activeSection === section.id
+                        ? "text-white bg-purple-600"
+                        : "text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-600"
+                      }`}
+                  >
+                    {section.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </motion.div>

@@ -17,7 +17,7 @@ interface IndustriesSectionProps {
 
 export default function IndustriesSection({ dict }: IndustriesSectionProps) {
   return (
-    <section className="py-20 bg-gray-900/50 relative">
+    <section className="py-20 bg-gray-50/50 dark:bg-gray-900/50 relative max-h-[90vh]">
       {/* Enhanced Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <div

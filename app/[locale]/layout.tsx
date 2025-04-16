@@ -12,7 +12,7 @@ export default async function LocaleLayout(props: {
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <title>ProTechien - Web Development Company</title>
+        <title>ProTechies - Web Development Company</title>
         <meta
           name="description"
           content="Professional web development services for businesses of all sizes"

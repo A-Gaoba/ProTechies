@@ -72,7 +72,7 @@ export default function LoadingScreen() {
           >
             <h1 className="text-4xl font-bold">
               <span className={isDark ? "text-white" : "text-gray-900"}>PRO</span>
-              <span className="text-purple-600">TECHIEN</span>
+              <span className="text-purple-600">TECHIES</span>
             </h1>
 
             {/* Code elements */}

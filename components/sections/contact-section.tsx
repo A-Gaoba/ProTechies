@@ -69,7 +69,7 @@ export default function ContactSection({ dict }: ContactSectionProps) {
                         </svg>
                       </div>
                       <span className="text-gray-700 dark:text-gray-300 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
-                        contact@protechien.com
+                        contact@protechies.com
                       </span>
                     </div>
                     <div className="flex items-center group">

@@ -131,7 +131,7 @@ export default function Header({ locale, dict }: HeaderProps) {
           <div className="flex items-center">
             <h1 className={`font-bold transition-all duration-300 ${scrolled ? "text-xl" : "text-2xl"}`}>
               <span className="text-white">PRO</span>
-              <span className="text-purple-500">TECHIEN</span>
+              <span className="text-purple-500">TECHIES</span>
             </h1>
           </div>
 

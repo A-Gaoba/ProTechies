@@ -23,7 +23,7 @@ export default function Footer({ dict }: FooterProps) {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold relative inline-block">
               <span className="text-white">PRO</span>
-              <span className="text-purple-500">TECHIEN</span>
+              <span className="text-purple-500">TECHIES</span>
               <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500"></div>
             </h3>
             <p className="text-gray-400 text-sm max-w-xs">
@@ -197,7 +197,7 @@ export default function Footer({ dict }: FooterProps) {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span className="group-hover:text-purple-400 transition-colors">contact@protechien.com</span>
+                <span className="group-hover:text-purple-400 transition-colors">contact@protechies.com</span>
               </p>
               <p className="text-gray-400 text-sm flex items-center group">
                 <svg
@@ -224,7 +224,7 @@ export default function Footer({ dict }: FooterProps) {
         <div className="mt-8 pt-8 border-t border-gray-200/10 dark:border-gray-700/10">
           <div className="bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-lg p-4 text-center">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} ProTechien. Crafted with passion and cutting-edge technology.
+              © {new Date().getFullYear()} ProTechies. Crafted with passion and cutting-edge technology.
             </p>
           </div>
         </div>

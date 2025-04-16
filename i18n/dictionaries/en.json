@@ -117,6 +117,23 @@
     }
   },
   "footer": {
-    "copyright": "All Rights Reserved"
+    "copyright": "All Rights Reserved",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "servicesTitle": "Services",
+    "webDev": "Web Development",
+    "appDev": "App Development",
+    "devOps": "DevOps",
+    "uiUx": "UI/UX Design",
+    "consulting": "Consulting",
+    "connect": "Connect",
+    "email": "contact@protechien.com",
+    "phone": "+1 (555) 123-4567",
+    "tagline": "Transforming digital visions into reality with cutting-edge web development solutions.",
+    "footerCopyright": "Crafted with passion and cutting-edge technology."
   }
 }

@@ -1,8 +1,27 @@
+"use client"
+
 import Link from "next/link"
 
 interface FooterProps {
   dict: {
     copyright: string
+    quickLinks?: string
+    home?: string
+    about?: string
+    services?: string
+    portfolio?: string
+    contact?: string
+    servicesTitle?: string
+    webDev?: string
+    appDev?: string
+    devOps?: string
+    uiUx?: string
+    consulting?: string
+    connect?: string
+    email?: string
+    phone?: string
+    tagline?: string
+    footerCopyright?: string
   }
 }
 
@@ -27,7 +46,7 @@ export default function Footer({ dict }: FooterProps) {
               <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500"></div>
             </h3>
             <p className="text-gray-400 text-sm max-w-xs">
-              Transforming digital visions into reality with cutting-edge web development solutions.
+              {dict.tagline || "Transforming digital visions into reality with cutting-edge web development solutions."}
             </p>
             <p className="text-gray-500 text-sm">
               {dict.copyright} © {new Date().getFullYear()}
@@ -36,61 +55,126 @@ export default function Footer({ dict }: FooterProps) {
 
           <div>
             <h4 className="text-lg font-semibold mb-4 text-purple-400 relative inline-block">
-              Quick Links
+              {dict.quickLinks || "Quick Links"}
               <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 w-2/3"></div>
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link
+                <a
                   href="#home"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const element = document.getElementById("home")
+                    if (element) {
+                      const headerHeight = 80 // Approximate header height
+                      const elementPosition = element.getBoundingClientRect().top + window.scrollY
+                      const offsetPosition = elementPosition - headerHeight
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth",
+                      })
+                    }
+                  }}
                   className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center group"
                 >
                   <span className="w-0 h-0.5 bg-purple-500 mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
-                  Home
-                </Link>
+                  {dict.home || "Home"}
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="#about"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const element = document.getElementById("about")
+                    if (element) {
+                      const headerHeight = 80 // Approximate header height
+                      const elementPosition = element.getBoundingClientRect().top + window.scrollY
+                      const offsetPosition = elementPosition - headerHeight
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth",
+                      })
+                    }
+                  }}
                   className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center group"
                 >
                   <span className="w-0 h-0.5 bg-purple-500 mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
-                  About
-                </Link>
+                  {dict.about || "About"}
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="#services"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const element = document.getElementById("services")
+                    if (element) {
+                      const headerHeight = 80 // Approximate header height
+                      const elementPosition = element.getBoundingClientRect().top + window.scrollY
+                      const offsetPosition = elementPosition - headerHeight
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth",
+                      })
+                    }
+                  }}
                   className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center group"
                 >
                   <span className="w-0 h-0.5 bg-purple-500 mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
-                  Services
-                </Link>
+                  {dict.services || "Services"}
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="#portfolio"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const element = document.getElementById("portfolio")
+                    if (element) {
+                      const headerHeight = 80 // Approximate header height
+                      const elementPosition = element.getBoundingClientRect().top + window.scrollY
+                      const offsetPosition = elementPosition - headerHeight
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth",
+                      })
+                    }
+                  }}
                   className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center group"
                 >
                   <span className="w-0 h-0.5 bg-purple-500 mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
-                  Portfolio
-                </Link>
+                  {dict.portfolio || "Portfolio"}
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault()
+                    const element = document.getElementById("contact")
+                    if (element) {
+                      const headerHeight = 80 // Approximate header height
+                      const elementPosition = element.getBoundingClientRect().top + window.scrollY
+                      const offsetPosition = elementPosition - headerHeight
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth",
+                      })
+                    }
+                  }}
                   className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors flex items-center group"
                 >
                   <span className="w-0 h-0.5 bg-purple-500 mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
-                  Contact
-                </Link>
+                  {dict.contact || "Contact"}
+                </a>
               </li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-lg font-semibold mb-4 text-purple-400 relative inline-block">
-              Services
+              {dict.servicesTitle || "Services"}
               <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 w-2/3"></div>
             </h4>
             <ul className="space-y-2">
@@ -100,7 +184,7 @@ export default function Footer({ dict }: FooterProps) {
                   className="text-gray-400 hover:text-purple-400 transition-colors flex items-center group"
                 >
                   <span className="w-0 h-0.5 bg-purple-500 mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
-                  Web Development
+                  {dict.webDev || "Web Development"}
                 </Link>
               </li>
               <li>
@@ -109,7 +193,7 @@ export default function Footer({ dict }: FooterProps) {
                   className="text-gray-400 hover:text-purple-400 transition-colors flex items-center group"
                 >
                   <span className="w-0 h-0.5 bg-purple-500 mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
-                  App Development
+                  {dict.appDev || "App Development"}
                 </Link>
               </li>
               <li>
@@ -118,7 +202,7 @@ export default function Footer({ dict }: FooterProps) {
                   className="text-gray-400 hover:text-purple-400 transition-colors flex items-center group"
                 >
                   <span className="w-0 h-0.5 bg-purple-500 mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
-                  DevOps
+                  {dict.devOps || "DevOps"}
                 </Link>
               </li>
               <li>
@@ -127,7 +211,7 @@ export default function Footer({ dict }: FooterProps) {
                   className="text-gray-400 hover:text-purple-400 transition-colors flex items-center group"
                 >
                   <span className="w-0 h-0.5 bg-purple-500 mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
-                  UI/UX Design
+                  {dict.uiUx || "UI/UX Design"}
                 </Link>
               </li>
               <li>
@@ -136,7 +220,7 @@ export default function Footer({ dict }: FooterProps) {
                   className="text-gray-400 hover:text-purple-400 transition-colors flex items-center group"
                 >
                   <span className="w-0 h-0.5 bg-purple-500 mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
-                  Consulting
+                  {dict.consulting || "Consulting"}
                 </Link>
               </li>
             </ul>
@@ -144,7 +228,7 @@ export default function Footer({ dict }: FooterProps) {
 
           <div>
             <h4 className="text-lg font-semibold mb-4 text-purple-400 relative inline-block">
-              Connect
+              {dict.connect || "Connect"}
               <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 w-2/3"></div>
             </h4>
             <div className="flex space-x-4 mb-4">
@@ -197,7 +281,9 @@ export default function Footer({ dict }: FooterProps) {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span className="group-hover:text-purple-400 transition-colors">contact@protechies.com</span>
+                <span className="group-hover:text-purple-400 transition-colors">
+                  {dict.email || "contact@protechiens.com"}
+                </span>
               </p>
               <p className="text-gray-400 text-sm flex items-center group">
                 <svg
@@ -214,7 +300,9 @@ export default function Footer({ dict }: FooterProps) {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <span className="group-hover:text-purple-400 transition-colors">+1 (555) 123-4567</span>
+                <span className="group-hover:text-purple-400 transition-colors">
+                  {dict.phone || "+1 (555) 123-4567"}
+                </span>
               </p>
             </div>
           </div>
@@ -224,7 +312,8 @@ export default function Footer({ dict }: FooterProps) {
         <div className="mt-8 pt-8 border-t border-gray-200/10 dark:border-gray-700/10">
           <div className="bg-gradient-to-r from-purple-500/5 to-pink-500/5 rounded-lg p-4 text-center">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} ProTechies. Crafted with passion and cutting-edge technology.
+              © {new Date().getFullYear()} ProTechies.{" "}
+              {dict.footerCopyright || "Crafted with passion and cutting-edge technology."}
             </p>
           </div>
         </div>

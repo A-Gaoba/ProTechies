@@ -61,7 +61,7 @@ export default function AboutSection({ dict }: AboutSectionProps) {
                   alt="About Us Illustration"
                   width={400}
                   height={400}
-                  className="rounded-lg"
+                  className="rounded-lg md:block hidden"
                 />
               </div>
             </div>

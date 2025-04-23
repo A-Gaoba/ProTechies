@@ -11,11 +11,14 @@ import HeroSection from "@/components/sections/hero-section"
 import AboutSection from "@/components/sections/about-section"
 import ServicesSection from "@/components/sections/services-section"
 import IndustriesSection from "@/components/sections/industries-section"
+import TestimonialsSection from "@/components/sections/testimonials-section"
 import ProcessSection from "@/components/sections/process-section"
 import ProjectsSection from "@/components/sections/projects-section"
 import TechnologiesSection from "@/components/sections/technologies-section"
 import ContactSection from "@/components/sections/contact-section"
 import LoadingScreen from "@/components/loading-screen"
+import WhyChooseUsSection from "@/components/sections/why-choose-us-setion"
+import FAQSection from "@/components/sections/faq-seciton"
 
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -64,11 +67,14 @@ export default function Home() {
             <main>
               <HeroSection dict={dict.hero} />
               <AboutSection dict={dict.about} />
+              <WhyChooseUsSection dict={dict.whyChooseUs} />
               <ServicesSection dict={dict.services} />
               <IndustriesSection dict={dict.industries} />
+              <TestimonialsSection dict={dict.testimonials} />
               <ProcessSection dict={dict.process} />
               <ProjectsSection dict={dict.projects} />
               <TechnologiesSection dict={dict.technologies} />
+              <FAQSection dict={dict.faq} />
               <ContactSection dict={dict.contact} />
             </main>
             <Footer dict={dict.footer} />

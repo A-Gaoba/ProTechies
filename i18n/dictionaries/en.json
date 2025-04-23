@@ -135,5 +135,84 @@
     "phone": "+1 (555) 123-4567",
     "tagline": "Transforming digital visions into reality with cutting-edge web development solutions.",
     "footerCopyright": "Crafted with passion and cutting-edge technology."
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "description": "We deliver exceptional value through our expertise, commitment to quality, and client-focused approach.",
+    "reasons": [
+      {
+        "title": "Expert Team",
+        "description": "Our team consists of experienced developers, designers, and strategists who bring diverse skills to every project."
+      },
+      {
+        "title": "Proven Track Record",
+        "description": "With over 100+ successful projects, we have consistently delivered high-quality solutions that exceed client expectations."
+      },
+      {
+        "title": "Transparent Process",
+        "description": "We maintain clear communication throughout the development process, ensuring you're always informed about progress."
+      },
+      {
+        "title": "Cutting-Edge Technology",
+        "description": "We stay ahead of industry trends, implementing the latest technologies to build future-proof solutions."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "description": "Don't just take our word for it. Here's what our clients have to say about working with us.",
+    "testimonials": [
+      {
+        "content": "ProTechien transformed our outdated website into a modern, responsive platform that has significantly increased our conversion rates. Their team was professional, responsive, and delivered exactly what we needed.",
+        "author": "Sarah Johnson",
+        "position": "Marketing Director",
+        "company": "GlobalTech Solutions",
+        "rating": 5
+      },
+      {
+        "content": "Working with ProTechien was a game-changer for our startup. They not only built our mobile app but also provided valuable insights that improved our overall product. The team's technical expertise and attention to detail are unmatched.",
+        "author": "Michael Chen",
+        "position": "CEO",
+        "company": "InnovateLabs",
+        "rating": 5
+      },
+      {
+        "content": "We've worked with several development agencies in the past, but ProTechien stands out for their commitment to quality and customer satisfaction. They delivered our e-commerce platform ahead of schedule and within budget.",
+        "author": "Emily Rodriguez",
+        "position": "E-commerce Manager",
+        "company": "StyleHub",
+        "rating": 4
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our services, process, and pricing.",
+    "faqs": [
+      {
+        "question": "How long does it take to complete a website?",
+        "answer": "The timeline varies depending on the complexity of the project. A simple website typically takes 4-6 weeks, while more complex projects with custom functionality may take 8-12 weeks or more. During our initial consultation, we'll provide a more accurate timeline based on your specific requirements."
+      },
+      {
+        "question": "What is your development process?",
+        "answer": "Our development process follows industry best practices and includes requirement gathering, design, development, testing, deployment, and ongoing support. We maintain transparent communication throughout the process and provide regular updates on progress."
+      },
+      {
+        "question": "Do you provide ongoing maintenance and support?",
+        "answer": "Yes, we offer various maintenance and support packages to ensure your website or application continues to run smoothly after launch. Our support includes regular updates, security patches, performance monitoring, and technical assistance. We recommend ongoing maintenance to protect your investment and keep your digital presence current."
+      },
+      {
+        "question": "What technologies do you use?",
+        "answer": "We use a wide range of modern technologies depending on project requirements. For web development, we typically work with React, Next.js, TypeScript, and Tailwind CSS for frontend, and Node.js, Python, or PHP for backend development. For mobile apps, we use React Native or native development with Swift and Kotlin. We're always evaluating and adopting new technologies to ensure we deliver the best solutions."
+      },
+      {
+        "question": "How much does a website or app cost?",
+        "answer": "The cost varies based on project complexity, features, and scope. Simple websites may start around $5,000, while complex web applications or e-commerce sites can range from $15,000 to $50,000+. Mobile apps typically start at $20,000. We provide detailed quotes after understanding your specific requirements during our initial consultation."
+      },
+      {
+        "question": "Do you offer SEO services?",
+        "answer": "Yes, we offer comprehensive SEO services to help improve your website's visibility in search engines. This includes on-page optimization, technical SEO, content strategy, keyword research, and performance monitoring. We can either build SEO best practices into your new website or optimize your existing site."
+      }
+    ]
   }
 }

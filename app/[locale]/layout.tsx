@@ -3,8 +3,8 @@ import type { Locale } from "@/i18n/config";
 import { ThemeProvider } from "@/components/theme-provider";
 import { getDictionary } from "@/i18n/dictionaries";
 import "../globals.css";
-import { Analytics } from "@vercel/analytics/react"
-
+import { Analytics } from "@vercel/analytics/react";
+import ChatToggleButton from "@/components/ChatToggleButton"; // your custom chat icon toggle
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
@@ -157,16 +157,16 @@ export default async function LocaleLayout(props: {
           {props.children}
           <Analytics />
 
-          {/* WhatsApp Floating Chat Icon */}
+          {/* WhatsApp Chat Icon */}
           <a
-            href="https://wa.me/+79174828474" // replace with your WhatsApp number
+            href="https://wa.me/+79174828474"
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed bottom-4 right-4 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-green-500 shadow-lg transition hover:bg-green-600"
+            className="fixed bottom-4 right-4 z-50 mb-16 flex h-12 w-12 items-center justify-center rounded-full bg-green-500 shadow-lg transition hover:bg-green-600"
             aria-label="Chat on WhatsApp"
           >
             <svg
-              className="h-8 w-8 text-white"
+              className="h-6 w-6 text-white"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 32 32"
               fill="currentColor"
@@ -175,6 +175,8 @@ export default async function LocaleLayout(props: {
             </svg>
           </a>
 
+          {/* Custom Project Chat Icon */}
+          <ChatToggleButton />
         </ThemeProvider>
       </body>
     </html>

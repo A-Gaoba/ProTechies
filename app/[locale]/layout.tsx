@@ -3,6 +3,8 @@ import type { Locale } from "@/i18n/config";
 import { ThemeProvider } from "@/components/theme-provider";
 import { getDictionary } from "@/i18n/dictionaries";
 import "../globals.css";
+import { Analytics } from "@vercel/analytics/react"
+
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
   const { locale } = await params;
@@ -153,6 +155,8 @@ export default async function LocaleLayout(props: {
             }}
           />
           {props.children}
+          <Analytics />
+
           {/* WhatsApp Floating Chat Icon */}
           <a
             href="https://wa.me/+79174828474" // replace with your WhatsApp number

@@ -30,7 +30,13 @@ export default function ChatWidget({ onClose }: { onClose: () => void }) {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/ask-mistral', {
+      // ✅ Use absolute API path for deployment compatibility
+      const apiURL =
+        typeof window !== 'undefined' && window.location.origin
+          ? `${window.location.origin}/api/ask-mistral`
+          : '/api/ask-mistral';
+
+      const res = await fetch(apiURL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: newMessages }),
@@ -38,29 +44,36 @@ export default function ChatWidget({ onClose }: { onClose: () => void }) {
 
       if (!res.ok) {
         const errorData = await res.json();
+        const errorMessage =
+          errorData?.error?.message || 'An error occurred. Please try again later.';
+
         setMessages([
           ...newMessages,
           {
             role: 'assistant',
-            content: `⚠️ Assistant error: ${errorData?.error?.message || 'An error occurred.'}`,
+            content: `⚠️ Assistant error: ${errorMessage}`,
           },
         ]);
       } else {
         const data = await res.json();
+        const reply = data?.response;
+
         setMessages([
           ...newMessages,
           {
             role: 'assistant',
-            content: data?.response || '⚠️ No response received from assistant.',
+            content: reply || '⚠️ No response received from assistant.',
           },
         ]);
       }
     } catch (err) {
+      console.error('API error:', err);
       setMessages([
         ...newMessages,
         {
           role: 'assistant',
-          content: '⚠️ Network error. Please check your connection and try again.',
+          content:
+            '⚠️ Network error. Please check your internet connection or try again later.',
         },
       ]);
     } finally {

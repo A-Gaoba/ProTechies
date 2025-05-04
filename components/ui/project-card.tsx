@@ -4,7 +4,8 @@ interface ProjectCardProps {
   imageSrc: string
   title: string
   description: string
-  tags: string[]
+  tags: string[],
+  link?: string,
 }
 
 export default function ProjectCard({ imageSrc, title, description, tags }: ProjectCardProps) {
@@ -16,7 +17,7 @@ export default function ProjectCard({ imageSrc, title, description, tags }: Proj
       <div className="relative bg-gradient-to-br from-white/80 to-gray-100/80 dark:from-gray-800/80 dark:to-gray-900/80 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-500/30 transition-all duration-300 transform hover:-translate-y-2 group-hover:shadow-xl group-hover:shadow-purple-500/20">
         <div className="relative h-48 overflow-hidden">
           <Image
-            src={imageSrc || "/placeholder.svg"}
+            src={imageSrc}
             alt={title}
             width={500}
             height={300}

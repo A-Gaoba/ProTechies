@@ -75,7 +75,7 @@ export default function TestimonialsSection({ dict }: TestimonialsSectionProps) 
                     >
                       <div className="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-purple-500">
                         <Image
-                          src={`/placeholder.svg?height=64&width=64&text=${dict.testimonials[activeIndex].author.charAt(0)}`}
+                          src="https://www.iconpacks.net/icons/1/free-user-icon-295-thumb.png"
                           alt={dict.testimonials[activeIndex].author}
                           width={64}
                           height={64}

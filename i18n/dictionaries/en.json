@@ -86,17 +86,45 @@
   "projects": {
     "title": "Our Projects",
     "description": "Here, you can find a few examples of how we successfully helped other companies beat their challenges and pain points.",
-    "project1": {
-      "title": "E-Commerce Platform",
-      "description": "A comprehensive online shopping platform with advanced features like real-time inventory management and secure payment processing."
+    "junzi": {
+      "title": "Junzi Tech Solutions",
+      "description": "Junzi Tech Solutions specializes in launching mobile and web applications in just 4 weeks, providing robust, functional, and market-ready solutions."
     },
-    "project2": {
-      "title": "AI-Powered Analytics",
-      "description": "An intelligent analytics dashboard that leverages machine learning to provide actionable insights from complex data sets."
+    "attaché": {
+      "title": "Yemeni Cultural Attaché - Moscow",
+      "description": "Official website offering cultural and educational services for Yemeni students and visitors in Russia."
     },
-    "project3": {
-      "title": "Healthcare Mobile App",
-      "description": "A patient-centric mobile application that streamlines appointment scheduling, medication reminders, and secure doctor-patient communication."
+    "sharaf": {
+      "title": "Sharaf Almahaqeri Portfolio",
+      "description": "Sharaf Almahaqeri's personal website showcasing his achievements, work, and online presence."
+    },
+    "toru": {
+      "title": "To Russai",
+      "description": "Helps students apply to Russian universities with guidance on applications, visas, and selections."
+    },
+    "alnono": {
+      "title": "Ali Alnono",
+      "description": "Showcasing the football career of Yemeni player Ali Alnono, including matches and legacy."
+    },
+    "gaobavid": {
+      "title": "GaobaVid - YouTube Clone",
+      "description": "A YouTube clone with browsing and video playback, built with YouTube API integration."
+    },
+    "crystallpool": {
+      "title": "Crystallpool Company",
+      "description": "Business offering pool installation and management services for clubs and homes."
+    },
+    "loqmat": {
+      "title": "Loqmat Hala",
+      "description": "Online sweet and dessert shop built for a home-based business."
+    },
+    "sara": {
+      "title": "Sara Alhassany Portfolio",
+      "description": "A personal website portfolio built for Sara Alhassany."
+    },
+    "ghofran": {
+      "title": "Ghofran Badran Portfolio",
+      "description": "Portfolio showcasing the work and identity of Ghofran Badran."
     }
   },
   "technologies": {
@@ -131,8 +159,8 @@
     "uiUx": "UI/UX Design",
     "consulting": "Consulting",
     "connect": "Connect",
-    "email": "contact@protechien.com",
-    "phone": "+1 (555) 123-4567",
+    "email": "abdulrahmangooba@gmail.com",
+    "phone": "+7 917 482 84 74",
     "tagline": "Transforming digital visions into reality with cutting-edge web development solutions.",
     "footerCopyright": "Crafted with passion and cutting-edge technology."
   },
@@ -160,28 +188,77 @@
   },
   "testimonials": {
     "title": "What Our Clients Say",
-    "description": "Don't just take our word for it. Here's what our clients have to say about working with us.",
+    "description": "Don't just take our word for it — hear directly from the people we've had the privilege to work with.",
     "testimonials": [
       {
-        "content": "ProTechien transformed our outdated website into a modern, responsive platform that has significantly increased our conversion rates. Their team was professional, responsive, and delivered exactly what we needed.",
-        "author": "Sarah Johnson",
-        "position": "Marketing Director",
-        "company": "GlobalTech Solutions",
+        "content": "Partnering with ProTechies took our idea from concept to launch in just four weeks. Their speed, clean code, and scalable solutions gave us the momentum we needed.",
+        "author": "Nikita",
+        "position": "CTO",
+        "company": "Junzi Tech Solutions",
         "rating": 5
       },
       {
-        "content": "Working with ProTechien was a game-changer for our startup. They not only built our mobile app but also provided valuable insights that improved our overall product. The team's technical expertise and attention to detail are unmatched.",
-        "author": "Michael Chen",
-        "position": "CEO",
-        "company": "InnovateLabs",
+        "content": "ProTechies developed our official cultural website with a level of professionalism that exceeded expectations. It's clean, multilingual, and represents our mission beautifully.",
+        "author": "Dr. Khaled Sha'afal",
+        "position": "Cultural Attaché",
+        "company": "Yemeni Cultural Attaché - Moscow",
         "rating": 5
       },
       {
-        "content": "We've worked with several development agencies in the past, but ProTechien stands out for their commitment to quality and customer satisfaction. They delivered our e-commerce platform ahead of schedule and within budget.",
-        "author": "Emily Rodriguez",
-        "position": "E-commerce Manager",
-        "company": "StyleHub",
+        "content": "As a developer, I wanted a personal website that reflects my skills and work clearly. ProTechies delivered exactly that — fast, elegant, and easy to update.",
+        "author": "Sharaf Almahaqeri",
+        "position": "Software Engineer",
+        "company": "Sharaf Portfolio",
+        "rating": 5
+      },
+      {
+        "content": "We needed a simple, intuitive platform to guide students through university applications in Russia. ProTechies built exactly what we envisioned — practical and user-focused.",
+        "author": "Awsan Abo Ghanem",
+        "position": "Founder",
+        "company": "To Russai",
+        "rating": 5
+      },
+      {
+        "content": "Creating an online tribute to a football icon was a big task. ProTechies built a stylish and engaging platform that honors Ali Alnono’s legacy.",
+        "author": "Ameen Alnono",
+        "position": "Manager",
+        "company": "Ali Alnono Legacy",
+        "rating": 5
+      },
+      {
+        "content": "I wanted a professional YouTube-style project to showcase in my portfolio. ProTechies delivered a polished, fully functional clone that stands out.",
+        "author": "Gaoba",
+        "position": "Frontend Developer",
+        "company": "GaobaVid",
+        "rating": 5
+      },
+      {
+        "content": "We needed a modern, trustworthy site to represent our pool business. ProTechies brought our vision to life and helped us attract more clients.",
+        "author": "Mohammed Yassin",
+        "position": "Operations Manager",
+        "company": "Crystallpool Company",
         "rating": 4
+      },
+      {
+        "content": "Our dessert shop needed a stylish, responsive online store. ProTechies crafted a design that perfectly matches our brand and makes managing orders easy.",
+        "author": "Hanan Al-Yafei",
+        "position": "Founder",
+        "company": "Loqmat Hala",
+        "rating": 5
+      },
+      {
+        "content": "I needed a sleek portfolio to showcase my photography and design. Thanks to ProTechies, I now have a site that reflects my identity and vision.",
+        "author": "Sara Alhassany",
+        "position": "Graphic Designer",
+        "company": "Sara Portfolio",
+        "rating": 5
+      },
+      {
+        "content": "The process was smooth from start to finish. ProTechies delivered a personal website that truly matches my creative style in photography.",
+        "author": "Ghofran Badran",
+        "position": "Creative Professional",
+        "company": "Ghofran Portfolio",
+        "rating": 5
       }
     ]
   },
